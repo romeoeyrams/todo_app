@@ -4,7 +4,7 @@ function Form(props) {
 
     const [name, setName] = useState("");
 
-    function handleChande(event){
+    function handleChange(event){
         setName(event.target.value);
     }
     
@@ -30,7 +30,7 @@ function Form(props) {
           name="text"
           autoComplete="off"
           value={name}
-          onChange={handleChande}
+          onChange={handleChange}
         />
 
         <button type="submit" className="btn btn__primary btn__lg">
